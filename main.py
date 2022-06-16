@@ -7,7 +7,8 @@ print("2. Decrypt")
 
 encryptDecrypt = int(input())
 
-if encryptDecrypt == 1:
+
+def encrypt():
 
    encryptText = input("Text to encrypt: ")
 
@@ -58,7 +59,7 @@ if encryptDecrypt == 1:
    f2 = open("output.txt", "w")
    f2.write(finalStr)
 
-elif encryptDecrypt == 2:
+def decrypt():
 
    decryptString = input("what to decrypt: ")
    #add file import
@@ -96,9 +97,3 @@ elif encryptDecrypt == 2:
 
    final = "".join(finalList)
    print(final)
-
-#for GUI after i fully impliment it
-
-#from menu import *
-#from menu import menu
-#menu()
